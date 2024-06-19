@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(61, 61, 61) ;
+            display: grid;
+            place-items: center;
+            height: 80vmin;
+            text-align: center;
+            color: #dfdede;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #heading{
+            margin-top: 70px;
+            font-size: 70px;
+        }
+        .box{
+            height: 50vmin;
+            width: 100vmin;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 30px;
+            padding-top: 50px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            gap:2vw;
+            justify-content: center;
+            align-items: center;
+            padding-top: 100px;
+        }
+    
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .chooseButton{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 13vmin;
+            width: 38vmin;
+            background-color:   #dfdede;
+            color: #5d5454;
+            border-radius: 30px;
+        }
+        .chooseButton:hover{
+           background-color: #5d5454;
+           color: #e5e5e5;
+        }
+        .btn{
+            padding-left: 10px;
+        }
+        .text{
+            text-align: left;
+            padding-right: 50px;
+        }
+        .play{
+            font-size: large;
+        }
+        .vs{
+            font-size: 30px;
+            font-weight: 600;
+            padding-top: 5px;
+        }
+       
+    </style>
+
+</head>
+<body >
+        <h1 id="heading">Tic-Tac-Toe</h1>
+        <div class="box">
+        <div id="image"><img src="images/img.png" height = 150px ></div>
+        <div class="container">
+                <a class="chooseButton btn" href="two player.html"><img src="images/two.png" height="75px" onclick="">
+                    <div class="text">
+                        <div class="play">Play vs</div> 
+                        <div class="vs"> FRIEND</div> 
+                    </div> 
+                </a>          
+                <a class="chooseButton" href="single player.html"><img src="images/bot.png" height="80px" onclick="">
+                    <div class="text">
+                        <div class="play">Play vs</div> 
+                        <div class="vs"> BOT</div> 
+                    </div>
+                </a>
+        </div>
+    </div>    
+</body>
+</html>
